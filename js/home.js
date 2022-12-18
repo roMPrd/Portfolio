@@ -12,3 +12,19 @@ function buttonwelcome() {
   element.offsetWidth
   element.classList.add("s8");
 }
+
+function fadeAway() {
+  const nodelay = document.getElementsByClassName('nodelay')
+  const delay1 = document.getElementById('delay1')
+  delay1.classList.remove("delay1");
+  delay1.offsetWidth
+  const delay2 = document.getElementById('delay2')
+  delay2.classList.remove("delay2");
+  delay2.offsetWidth
+  console.log(nodelay);
+  // nodelay.forEach(element => console.log(element));
+  nodelay.forEach(element => {element.classList.add("fadeAway")});
+  nodelay.classList.add("fadeAway");
+  delay1.classList.add("fadeAway");
+  delay2.classList.add("fadeAway");
+}
