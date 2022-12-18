@@ -1,0 +1,81 @@
+:root {
+  --lightblack: #1b1b1b;
+}
+
+* {
+  margin: 0;
+}
+
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: var(--lightblack);
+  overflow: hidden;
+}
+
+.split-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.split-container-top {
+  width: 100vw;
+  height: 59vh;
+  z-index: 3;
+  /* border-bottom: 3px solid; */
+  /* border-color: var(--lightblack); */
+  background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(20,20,20,1) 50%, rgba(15,15,15,1) 100%);
+  position: relative;
+  /* animation: border-effect 5s infinite linear forwards; */
+}
+
+.split-container-top .border {
+  position: absolute;
+  z-index: 3;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1vh;
+  background: red;
+  /* animation: border-effect 5s infinite linear forwards; */
+}
+
+.split-container-top #button-welcome {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 50%;
+  border: var(--lightblack) 3px solid;
+  background: radial-gradient(circle, rgba(150,0,0,1) 0%, rgba(70,50,50,1) 75%, rgba(100,100,100,1) 100%);
+  text-align: center;
+}
+#button-welcome:hover {
+  background: radial-gradient(circle, rgba(150,0,0,0.7) 0%, rgba(70,50,50,1) 75%, rgba(100,100,100,1) 100%);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.split-container-bottom {
+  width: 100vw;
+  height: 40vh;
+  /* z-index: 2; */
+  background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(20,20,20,1) 50%, rgba(15,15,15,1) 100%);
+}
+
+@keyframes border-effect {
+  0% {background-color: var(--lightblack);}
+  5% {background-color: linear-gradient(90deg, rgba(27,27,27,1) 0% rgba(80,10,10,1) 1%, rgba(255,0,0,1) 5%, rgba(80,10,10,1) 10%, rgba(27,27,27,1) 100%);}
+  95% {background-color: linear-gradient(90deg, rgba(27,27,27,1) 0% rgba(80,10,10,1) 95%, rgba(255,0,0,1) 98%, rgba(80,10,10,1) 99%, rgba(27,27,27,1) 100%);}
+  100% {background-color: var(--lightblack);}
+}
