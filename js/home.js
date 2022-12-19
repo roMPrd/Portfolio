@@ -14,17 +14,20 @@ function buttonwelcome() {
 }
 
 function fadeAway() {
-  const nodelay = document.getElementsByClassName('nodelay')
-  const delay1 = document.getElementById('delay1')
-  delay1.classList.remove("delay1");
-  delay1.offsetWidth
+  // const delay1 = document.getElementsByClassName('delay1')
+  const welcomeText = document.getElementById('welcome-text')
+  const delay1 = document.querySelectorAll('.delay1')
+  const delay15 = document.getElementById('delay1-5')
   const delay2 = document.getElementById('delay2')
+  delay15.classList.remove("delay1-5");
+  delay15.offsetWidth
   delay2.classList.remove("delay2");
   delay2.offsetWidth
-  console.log(nodelay);
-  // nodelay.forEach(element => console.log(element));
-  nodelay.forEach(element => {element.classList.add("fadeAway")});
-  nodelay.classList.add("fadeAway");
-  delay1.classList.add("fadeAway");
+  console.log(delay1);
+  delay1.forEach((element) => {element.classList.add("fadeAway");});
+  delay15.classList.add("fadeAway");
   delay2.classList.add("fadeAway");
+  // sleep(2000);
+  setTimeout(() => { welcomeText.classList.add("d-none"); }, 5000);
+  // welcomeText.classList.add("d-none");
 }

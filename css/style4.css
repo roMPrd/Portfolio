@@ -1,6 +1,10 @@
-* {
+body {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  padding-left: 0;
 }
 
 body {
@@ -84,7 +88,7 @@ body {
   font-size: 0.7em;
   font-weight: normal;
   line-height: 2em;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 .welcome-text .fa-solid {
@@ -130,11 +134,15 @@ body {
 }
 
 .delay1{
-  animation-delay: 2s;
+  animation-delay: 1s;
+}
+
+.delay1-5{
+  animation-delay: 1.5s;
 }
 
 .delay2{
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 @keyframes opacity {
