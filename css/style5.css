@@ -1,0 +1,14 @@
+
+/* Color Variables */
+
+:root {
+  --lightgrey: #7F7F83;
+  --darkgrey: #3F3F3F;
+  --textgrey: #868CA0;
+}
+
+/* General */
+
+body {
+  background-color: var(--darkgrey);
+}
