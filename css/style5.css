@@ -42,15 +42,16 @@
   align-items: center;
   justify-content: space-around;
   width: 30%;
+  height: 100%;
 }
 
 .header a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 15px;
-  font-size: 0.5em;
+  font-size: 1em;
   font-weight: bold;
   font-family: ubuntu;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -73,6 +74,7 @@ border-radius: 0px;
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 5;
 }
 
 .header-sidebar {
@@ -84,18 +86,19 @@ border-radius: 0px;
   position: absolute;
   top: 0;
   padding: 1rem;
+  margin-top: 1rem;
 }
 
 .header-sidebar p {
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin: 0;
 }
 
 .avatar {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .sidebar .projects {
@@ -108,7 +111,7 @@ border-radius: 0px;
 }
 
 .sidebar .projects p {
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   margin: 0;
   padding-bottom: 1rem;
   cursor: pointer;
@@ -123,17 +126,21 @@ border-radius: 0px;
 
 .sidebar-retract .fa-chevron-left {
   background-color: var(--menugrey);
-  font-size: 0.5rem;
+  font-size: 1rem;
   position: absolute;
   top: 20%;
-  right: -14px;
+  right: -30px;
   cursor: pointer;
-  height: 1.5rem;
+  height: 5rem;
   width: fit-content;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.3rem;
-  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 0 1rem 1rem 0;
+  z-index: 4;
+}
+.sidebar-retract .fa-chevron-left:hover {
+  color: var(--lightgrey);
 }
