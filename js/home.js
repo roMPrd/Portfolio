@@ -31,3 +31,19 @@ function fadeAway() {
   setTimeout(() => { welcomeText.classList.add("d-none"); }, 5000);
   // welcomeText.classList.add("d-none");
 }
+
+function retract() {
+  const sidebar = document.getElementById('sidebar')
+  const chevron = document.getElementById('chevron-btn')
+  console.log(sidebar)
+
+  if (sidebar.classList.contains('retract-effect')) {
+    sidebar.classList.remove("retract-effect");
+    chevron.classList.remove("fa-chevron-right");
+    chevron.classList.add("fa-chevron-left");
+  } else {
+    sidebar.classList.add("retract-effect");
+    chevron.classList.remove("fa-chevron-left");
+    chevron.classList.add("fa-chevron-right");
+  }
+}
