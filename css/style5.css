@@ -17,6 +17,8 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  /* display: flex; */
+  overflow: hidden;
 }
 
 * {
@@ -33,6 +35,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
 }
 
 .header .links {
@@ -64,9 +68,9 @@ border-radius: 0px;
 
 /* Sidebar */
 
-.sidebar {
+#sidebar {
   background-color: var(--menugrey);
-  position: absolute;
+  /* position: absolute; */
   width: 15%;
   height: 100vh;
   display: flex;
@@ -101,7 +105,7 @@ border-radius: 0px;
   margin-bottom: 1rem;
 }
 
-.sidebar .projects {
+#sidebar .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,21 +114,21 @@ border-radius: 0px;
   padding: 1rem;
 }
 
-.sidebar .projects p {
+#sidebar .projects p {
   font-size: 1.5rem;
   margin: 0;
   padding-bottom: 1rem;
   cursor: pointer;
 }
 
-.sidebar .projects p:hover {
+#sidebar .projects p:hover {
   color: var(--lightgrey);
 }
 
 .sidebar-retract {
 }
 
-.sidebar-retract .fa-chevron-left {
+.sidebar-retract .fas {
   background-color: var(--menugrey);
   font-size: 1rem;
   position: absolute;
@@ -141,6 +145,22 @@ border-radius: 0px;
   border-radius: 0 1rem 1rem 0;
   z-index: 4;
 }
-.sidebar-retract .fa-chevron-left:hover {
+
+.sidebar-retract .fas:hover {
   color: var(--lightgrey);
+}
+
+.retract-effect {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  /* transform: translateX(-100%); */
+
+}
+
+/* Container */
+
+.container {
+  background-color: antiquewhite;
+  width: 85%;
 }
