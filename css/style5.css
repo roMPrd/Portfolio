@@ -176,8 +176,27 @@ border-radius: 0px;
   z-index: 4;
   right: 0;
   top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
 }
 
 .extend-effect {
   width: 100%;
+}
+
+/* CodeHunter */
+
+.video-codehunter {
+  height: 30vh;
+  width: auto;
+  border-radius: 20px;
+}
+
+.banner-video {
+  height: 30vh;
+  width: auto;
+  border-radius: 20px
 }
