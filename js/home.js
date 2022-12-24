@@ -33,17 +33,20 @@ function fadeAway() {
 }
 
 function retract() {
-  const sidebar = document.getElementById('sidebar')
+  const sidebar = document.getElementById('sidebar-container')
   const chevron = document.getElementById('chevron-btn')
-  console.log(sidebar)
+  const container = document.getElementById('container-expand')
+  console.log(container)
 
   if (sidebar.classList.contains('retract-effect')) {
     sidebar.classList.remove("retract-effect");
     chevron.classList.remove("fa-chevron-right");
+    container.classList.remove("extend-effect");
     chevron.classList.add("fa-chevron-left");
   } else {
     sidebar.classList.add("retract-effect");
     chevron.classList.remove("fa-chevron-left");
+    container.classList.add("extend-effect");
     chevron.classList.add("fa-chevron-right");
   }
 }
