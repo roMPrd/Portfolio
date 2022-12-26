@@ -50,3 +50,19 @@ function retract() {
     chevron.classList.add("fa-chevron-right");
   }
 }
+
+function hideToHome() {
+  const home = document.getElementById('container-codehunter')
+  let containers = document.getElementsByClassName('container-effect');
+  console.log(typeof containers);
+
+  Array.from(containers).forEach((element) => {
+    console.log(element)
+    if (element.classlist.contains('hide-effect')) {
+
+    } else {
+      element.classList.add("hide-effect");
+    }
+  })
+  home.classList.remove('hide-effect');
+}
