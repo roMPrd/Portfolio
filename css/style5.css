@@ -70,7 +70,7 @@ p {
   cursor: pointer;
 }
 
-.header a:hover {
+.header p:hover {
 background-color: var(--lightgrey);
 border-radius: 0px;
 }
@@ -216,7 +216,7 @@ border-radius: 0px;
 .container-codehunter {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
@@ -304,24 +304,21 @@ border-radius: 0px;
 }
 
 .links-contact .fa-brands {
-  /* text-decoration: none; */
   color:white;
   font-size: 2rem;
   width: auto;
   padding: 2rem;
 }
-.links-contact .fa-solid {
-  /* text-decoration: none; */
-  color:white;
-  font-size: 2rem;
-  width: auto;
-  padding: 2rem;
+.links-contact .fa-brands:hover {
+  color: var(--lightgrey);
 }
 
-.links-contact .fa-brands {
-  /* text-decoration: none; */
+.links-contact .fa-solid {
   color:white;
   font-size: 2rem;
   width: auto;
   padding: 2rem;
+}
+.links-contact .fa-solid:hover {
+  color: var(--lightgrey);
 }
