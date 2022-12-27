@@ -5,32 +5,32 @@
 //   console.log("buttonwelcome");
 // });
 
-function buttonwelcome() {
-  console.log("buttonwelcome");
-  const element = document.getElementById('s8')
-  element.classList.remove("s8");
-  element.offsetWidth
-  element.classList.add("s8");
-}
+// function buttonwelcome() {
+//   console.log("buttonwelcome");
+//   const element = document.getElementById('s8')
+//   element.classList.remove("s8");
+//   element.offsetWidth
+//   element.classList.add("s8");
+// }
 
-function fadeAway() {
-  // const delay1 = document.getElementsByClassName('delay1')
-  const welcomeText = document.getElementById('welcome-text')
-  const delay1 = document.querySelectorAll('.delay1')
-  const delay15 = document.getElementById('delay1-5')
-  const delay2 = document.getElementById('delay2')
-  delay15.classList.remove("delay1-5");
-  delay15.offsetWidth
-  delay2.classList.remove("delay2");
-  delay2.offsetWidth
-  console.log(delay1);
-  delay1.forEach((element) => {element.classList.add("fadeAway");});
-  delay15.classList.add("fadeAway");
-  delay2.classList.add("fadeAway");
-  // sleep(2000);
-  setTimeout(() => { welcomeText.classList.add("d-none"); }, 5000);
-  // welcomeText.classList.add("d-none");
-}
+// function fadeAway() {
+//   // const delay1 = document.getElementsByClassName('delay1')
+//   const welcomeText = document.getElementById('welcome-text')
+//   const delay1 = document.querySelectorAll('.delay1')
+//   const delay15 = document.getElementById('delay1-5')
+//   const delay2 = document.getElementById('delay2')
+//   delay15.classList.remove("delay1-5");
+//   delay15.offsetWidth
+//   delay2.classList.remove("delay2");
+//   delay2.offsetWidth
+//   console.log(delay1);
+//   delay1.forEach((element) => {element.classList.add("fadeAway");});
+//   delay15.classList.add("fadeAway");
+//   delay2.classList.add("fadeAway");
+//   // sleep(2000);
+//   setTimeout(() => { welcomeText.classList.add("d-none"); }, 5000);
+//   // welcomeText.classList.add("d-none");
+// }
 
 function retract() {
   const sidebar = document.getElementById('sidebar-container')
@@ -51,18 +51,42 @@ function retract() {
   }
 }
 
+// function hideToHome() {
+//   const home = document.getElementById('container-codehunter')
+//   const containers = document.getElementsByClassName('container-effect');
+//   console.log(typeof containers);
+
+//   Array.from(containers).forEach((element) => {
+//     console.log(element)
+//     if (element.classList.includes('hide-effect')) {
+
+//     } else {
+//       element.classList.add("hide-effect");
+//     }
+//   })
+//   home.classList.remove('hide-effect');
+// }
+
 function hideToHome() {
-  const home = document.getElementById('container-codehunter')
-  let containers = document.getElementsByClassName('container-effect');
-  console.log(typeof containers);
+  // home is the container of codehunter
+  const home = document.getElementById('container-home')
+  const contact = document.getElementById('container-contact')
+  console.log(home)
+  console.log(contact)
 
-  Array.from(containers).forEach((element) => {
-    console.log(element)
-    if (element.classlist.contains('hide-effect')) {
+  if (contact.classList.contains('hide-effect')) {} else {contact.classList.add('hide-effect')}
+  if (home.classList.contains('hide-effect')) {home.classList.remove('hide-effect')}
 
-    } else {
-      element.classList.add("hide-effect");
-    }
-  })
-  home.classList.remove('hide-effect');
+}
+
+function hideToContact() {
+  // home is the container of codehunter
+  const home = document.getElementById('container-home')
+  const contact = document.getElementById('container-contact')
+  console.log(home)
+  console.log(contact)
+
+  if (home.classList.contains('hide-effect')) {} else {home.classList.add('hide-effect')}
+  if (contact.classList.contains('hide-effect')) {contact.classList.remove('hide-effect')}
+
 }

@@ -25,7 +25,7 @@
         <div class="links">
           <p onclick="hideToHome()">Home</p>
           <!-- <a href="">Portfolio</a> -->
-          <p>Contact</p>
+          <p onclick="hideToContact()">Contact</p>
           <p>About</p>
         </div>
       </div>
@@ -44,7 +44,7 @@
           </div>
 
           <div class="projects">
-            <p>Code Hunter</p>
+            <p onclick="hideToHome()">Code Hunter</p>
             <p>Dev Hunter</p>
           </div>
 
@@ -57,7 +57,7 @@
       <!-- ********** MAIN ********** -->
       <div id="container-expand" class="container">
 
-        <div class="container-codehunter container-effect">
+        <div id="container-home" class="container-codehunter container-effect">
           <div class="title">
             <h1>CODE <span class="text-green">HUNTER</span></h1>
           </div>
@@ -90,7 +90,7 @@
         </div>
 
         <!-- ********** CONTACT ********** -->
-        <div class="container-contact container-effect">
+        <div id="container-contact" class="container-contact container-effect hide-effect">
           <div class="title">
             <h1>CONTACT</h1>
           <div class="container-project">
